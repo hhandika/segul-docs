@@ -1,0 +1,35 @@
+# Translating DNA sequences
+
+`segul` translate DNA sequence based on [NCBI Genetic Code Tables](https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi#top). List of the supported tables is available [here](https://github.com/hhandika/segul/wiki/5.-Usages#translating-dna-sequences).
+
+To translate dna alignment to amino acid using `--dir` (or `-d` in short version):
+
+```Bash
+segul translate --dir [path-to-alignment-files] -f [sequence-format-keyword]
+```
+
+Using `--input` (or `-i` in short version) option ([learn the difference](https://github.com/hhandika/segul/wiki/4.-Command-Options#input-options)):
+
+```Bash
+segul translate --input [a-path/wilcard-to-files]
+```
+
+By default, the app will use the NCBI standard code table (Table 1). To set the translation table, use the `--table` option. For example, to translate dna sequences using NCBI Table 2 (vertebrate MtDNA):
+
+```Bash
+segul translate -d loci/ -f fasta --table 2
+```
+
+You can also set the reading frame using the `--rf` option:
+
+```Bash
+segul translate -d loci/ -f fasta --table 2 --rf 2
+```
+
+To show all the table options, use the `--show-tables` flag:
+
+```Bash
+segul translate --show-tables
+```
+
+Learn more about translating DNA sequences to amino acid sequences [here](https://github.com/hhandika/segul/wiki/5.-Usages#translating-dna-sequences).

@@ -4,7 +4,7 @@
   "anchors": [
     {
       "title": "crates.io",
-      "icon": "house",
+      "icon": "code",
       "link": "https://docs.rs/segul/latest/segul/"
     }
   ],
@@ -13,8 +13,9 @@
     [
       "Quick Start",
       [
-        ["Command Options", "/command_options"],
-        ["Using SEGUL", "/quick_usage"]
+        ["Commands", "/quick_commands"],
+        ["Usage", "/quick_usage"],
+        ["Log File", "/quick_log"]
       ]
     ],
     [
@@ -26,6 +27,23 @@
       ]
     ],
     ["Command Options", "/command_options"],
-    ["Usage", [["Overview", "/usage_overview"]]]
+    [
+      "Usage",
+      [
+        ["Overview", "/usage_overview"],
+        ["Summary Statistics", "/quick_summary"],
+        ["Alignment Concatenation", "/quick_concat"],
+        ["Alignment Conversion", "/quick_convert"],
+        ["Alignment Filtering", "/quick_filter"],
+        ["Alignment Splitting", "/quick_split"],
+        ["Partition Conversion", "/quick_part"],
+        ["Sequence Extraction", "/quick_extract"],
+        ["Sequence Removal", "/quick_remove"],
+        ["Sequence Renaming", "/quick_rename"],
+        ["Sequence Translation", "/quick_translate"],
+        ["Sequence ID Finding", "/quick_id"],
+        ["Sequence ID Mapping", "/quick_map"]
+      ]
+    ]
   ]
 }
