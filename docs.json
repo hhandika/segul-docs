@@ -10,7 +10,7 @@
   ],
   "sidebar": [
     ["Welcome", "/"],
-    ["Quick Start", "/start"],
+    ["Getting Started", "/getting_started"],
     [
       "Installation",
       [
