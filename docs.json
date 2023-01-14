@@ -4,7 +4,7 @@
   "anchors": [
     {
       "title": "SEGUL Source Code",
-      "icon": "github",
+      "icon": "code",
       "link": "https://github.com/hhandika/segul"
     },
     {
@@ -14,7 +14,7 @@
     },
     {
       "title": "Source Code Docs",
-      "icon": "code",
+      "icon": "file-code-o",
       "link": "https://docs.rs/segul/latest/segul/"
     }
   ],
