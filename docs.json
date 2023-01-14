@@ -63,7 +63,7 @@
     [
       "Developer Resources",
       [
-        ["Rust Package", "/develop_rust"],
+        ["Rust Crate", "/develop_rust"],
         ["R Package", "/develop_r"],
         ["Python Package", "/develop_py"],
         ["Julia Package", "/develop_julia"],
