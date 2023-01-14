@@ -3,7 +3,13 @@
   "description": "An ultrafast and memory efficient alignment tool for phylogenomics",
   "sidebar": [
     ["Welcome", "/"],
-    ["Quick Start", "/quick_start"],
+    [
+      "Quick Start",
+      [
+        ["Command Options", "/command_options"],
+        ["Using SEGUL", "/using_segul"]
+      ]
+    ],
     [
       "Installation",
       [
