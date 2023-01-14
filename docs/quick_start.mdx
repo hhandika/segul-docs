@@ -1,5 +1,7 @@
 # Using SEGUL
 
+# Using SEGUL
+
 ## Command Structure
 
 The app command structure is similar to git, gh-cli, or any other app that use subcommands. The app file name will be `segul` for Linux/MacOS/WSL and `segul.exe` for Windows.
@@ -20,12 +22,78 @@ To check for available options and flags for each sub-command:
 segul <SUBCOMMAND> --help
 ```
 
+Across the app functions, most generic arguments are also available in short format to save time typing them. For example, below we use short arguments to concat alignments in a directory named `nexus-alignments`:
+
+```Bash
+segul concat -d nexus-alignments -f nexus
+```
+
+## Input Options
+
+The app has two input options. The standard input `--input` or `-i` in short format and `--dir` or `-d` in short format. If your input files are all in a single directory, you should use the `--dir` or `-d` option and specify the file format:
+
+```Bash
+segul <SUBCOMMAND> -d alignment_dir -f nexus
+```
+
+When dealing with a single file, more complex folder structure, or unusual file extensions, use the `--input` or `-i` option.
+
+For a single file:
+
+```Bash
+segul <SUBCOMMAND> -i alignment-dir/alignment_file.fasta
+```
+
+Multiple file in a directory using wildcard:
+
+```Bash
+segul <SUBCOMMAND> -i alignment-dir/*.fasta
+```
+
+Multiple files in multiple directories:
+
+```Bash
+segul <SUBCOMMAND> -i alignment-dir1/*.fasta alignment-dir2/*.fasta
+```
+
+For unusual file extensions or if the app failed to detect the file format, specify the input format:
+
+```Bash
+segul <SUBCOMMAND> -i alignment-dir/*.aln -f fasta
+```
+
+Both of the input options are available in all subcommands.
+
+## Datatype
+
+The app support both DNA and amino acid sequences. It will check whether the sequences contain only valid IUPAC characters of the datatype. By default, it sets to DNA sequences. Use the option `--datatype aa` if your input is amino acid sequences. For example:
+
+```Bash
+segul convert -d /alignments -f nexus --datatype aa
+```
+
+## Output
+
+Most functions will save into their default directory. For example, the concat function will default to create `SEGUL-concat` directory and will save its output files into the directory. To specify the output directory, use the `--output` or `-o` option. For example:
+
+```Bash
+segul convert -d /alignments -f nexus -o alignments_concat
+```
+
+By default, the app avoids over-writing files with similar names. The app will check if a such file or directory exists and will ask if you would like to remove it. The app will exit if you decide to not remove it. You can pass `--overwrite` flag to remove existing output files or directories without asking first.
+
 ## Computing sequence summary statistics
 
 `segul` generate summary statistics for all alignment, each locus, and each taxon. To generate the summary statistics in for alignment files in a directory (usign `--dir` or `-d` option):
 
 ```Bash
 segul summary --dir [a-path-to-a-directory] --input-format [sequence-format-keyword]
+```
+
+Using `--input` (or `-i` in short version) option:
+
+```Bash
+segul summary --input [a-path/wilcard-to-files]
 ```
 
 `segul` can also generate summary statistics for each alignment by passing `--per-locus` flag:
@@ -99,7 +167,7 @@ For using regular expression:
 segul extract -d gblock_trimmed_80p/ -f nexus --re="regex-syntax"
 ```
 
-`segul` uses the rust [regex library](https://docs.rs/regex/1.5.4/regex/) to parse regular expression. The syntax is similar to Perl regular expression (find out more [here](https://docs.rs/regex/1.5.4/regex/)).
+`segul` uses the rust [regex](https://docs.rs/regex/1.5.4/regex/) to parse regular expression. The syntax is similar to Perl regular expression.
 
 ## Filtering alignments
 
@@ -160,20 +228,6 @@ Using `--input` (or `-i` in short version) option:
 ```Bash
 segul id --input [a-path/wilcard-to-files] --map
 ```
-
-## Splitting concatenated alignments by partitions
-
-To split alignment by partitions, you need the alignment file and the alignment partition. If the input partition file is not provided, `segul` will assume the partition is in the alignment file. It will fail to run if it could not find the partition in the input alignment.
-
-The input option accepts a single file only. The `--dir` option is not available for this subcommand.
-
-```Bash
-segul split --input [a-path-to-a-concatenated-alignment] --input-part [a-path-to-partition-file]
-```
-
-By default, `segul` will use the alignment name as an output directory. To provide the output directory name, use the `--output` or `-o` option.
-
-For the resulting alignments, `segul` will use the locus name in the partition file as the output filename. You can prefix this filename by using `--prefix` option. The resulting filenames will be {prefix}\_{locus-name}.{file-extension}.
 
 ## Batch removing sequence based on user-defined IDs
 
