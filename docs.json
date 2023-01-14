@@ -13,7 +13,7 @@
     [
       "Quick Start",
       [
-        ["Command Options", "/command_options"],
+        ["SEGUL Commands", "/quick_commands"],
         ["Using SEGUL", "/quick_usage"]
       ]
     ],
