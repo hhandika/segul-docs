@@ -13,7 +13,7 @@
       "link": "https://crates.io/crates/segul"
     },
     {
-      "title": "Source Code Docs",
+      "title": "API Documentation",
       "icon": "file",
       "link": "https://docs.rs/segul/latest/segul/"
     }
