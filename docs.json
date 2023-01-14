@@ -1,5 +1,15 @@
 {
     "name": "SEGUL",
-    "description": "An ultrafast and memory efficient alignment tool for phylogenomics"
+    "description": "An ultrafast and memory efficient alignment tool for phylogenomics",
+    "sidebar": [
+        ["Welcome", "/"],
+        ["Getting Started", [
+          ["Installation", "/installation"],
+          ["Update", "/update"],
+          ["Command Options", "/command_options"],
+          ["Usage", "/usage"],
+          ["Uninstall", "/uninstall"]
+        ]]
+      ]
   }
   
