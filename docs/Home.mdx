@@ -1,0 +1,11 @@
+# Welcome to SEGUL Documentation
+
+`segul` is an ultrafast and memory efficient alignment tool to manipulate alignment files and generate sequence statistics for them. The app is written in [Rust](https://www.rust-lang.org/), a fast, memory safe, and data race free programming language. It is a compiled app with zero runtime dependency on MacOS and Windows, and only relies on the dependency that is provided by the OS ([GLIBC](https://www.gnu.org/software/libc/)) on Linux.
+
+`segul`'s low memory footprint allows the app to run on a computer with limited RAM. In our test, `segul` can process >4000 UCE loci on Macbook Air 2015 with 4-core (8 thread) CPU and 4 Gb of RAM. It still does it faster than running a similar program using Biophyton library on a faster computer equipped with a 12-core (24-thread) Ryzen 3900x CPU and 32 Gb of RAM.
+
+This docomentation provides all the details on using `segul`. Unlike the usage instruction in the [README](https://github.com/hhandika/segul), it assumes no to limited experience in using command line application.
+
+## Don't have time to read all the documentation?
+
+After installing `segul`, we recommend to read the overview sections at the top of Command Options and Usages pages. It will give you general ideas how segul works. Then, feel free to read the specific function instructions for your use cases.
