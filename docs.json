@@ -14,7 +14,7 @@
     },
     {
       "title": "Source Code Docs",
-      "icon": "file-code-o",
+      "icon": "file",
       "link": "https://docs.rs/segul/latest/segul/"
     }
   ],
