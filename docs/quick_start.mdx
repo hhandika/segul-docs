@@ -128,7 +128,7 @@ Using `--input` (or `-i` in short version) option:
 segul convert --input [path/wildcard-to-your-files] --output-format [sequence-format-keyword]
 ```
 
-# Splitting concatenated alignments by partitions
+## Splitting concatenated alignments by partitions
 
 To split alignment by partitions, you need the alignment file and the alignment partition. If the input partition file is not provided, `segul` will assume the partition is in the alignment file. It will fail to run if it could not find the partition in the input alignment.
 
@@ -206,7 +206,7 @@ Other available parameters are multiple minimal taxon completeness `--npercent`,
 
 By default, the app will copy files that are match with the parameter to a new folder. If you would like to concat the results instead, you can specify it by passing `--concat` flags. All the options available for the concat function [above](#concatenating-alignments) also available for concatenating filtered alignments.
 
-# Converting partition formats
+## Converting partition formats
 
 `segul` can convert a single and multiple partition files in multiple folders. It can extract partition embedded in NEXUS sequence files or merge codon model partition. For this command, the input option is only available using the `--input` option (or `-i` in short version).
 
@@ -218,12 +218,6 @@ For example, to extract nexus in-file partitions (called charset format in `segu
 
 ```Bash
 segul partition --input concatenated_alignment.nex --input-part charset --output-part nexus
-```
-
-You can also use wildcard to convert multiple concatenated alignment partitions at once:
-
-```Bash
-segul partition --input ./*/concatenated_alignment.nex --input-part charset --output-part nexus
 ```
 
 When merging codon model partition, `segul` can clean up locus names if they are suffixes with `subsetCodon_pos`, `subset_codon_pos`, or `codon_pos_pos`. For example, for this partition format:
