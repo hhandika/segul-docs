@@ -3,6 +3,7 @@
   "description": "An ultrafast and memory efficient alignment tool for phylogenomics",
   "sidebar": [
     ["Welcome", "/"],
+    ["Quick Start", "/quick_start"],
     [
       "Installation",
       [
@@ -11,12 +12,7 @@
         ["Uninstall", "/uninstall"]
       ]
     ],
-    [
-      "Usage",
-      [
-        ["Command Options", "/command_options"],
-        ["Usage", "/usage"]
-      ]
-    ]
+    ["Command Options", "/command_options"],
+    ["Usage", [["Overview", "/usage_overview"]]]
   ]
 }
