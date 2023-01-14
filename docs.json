@@ -32,7 +32,7 @@
       "Usage",
       [
         ["Overview", "/usage_overview"],
-        ["Summary Statistics", "/quick_summary"],
+        ["Summary Statistics", "/usage_summary"],
         ["Alignment Concatenation", "/quick_concat"],
         ["Alignment Conversion", "/quick_convert"],
         ["Alignment Filtering", "/quick_filter"],
