@@ -8,10 +8,10 @@
       "link": "https://github.com/hhandika/segul"
     },
     {
-        "title": "crates.io",
-        "icon": "cubes",
-        "link": "https://crates.io/crates/segul"
-      }
+      "title": "crates.io",
+      "icon": "cubes",
+      "link": "https://crates.io/crates/segul"
+    },
     {
       "title": "Source Code Docs",
       "icon": "code",
