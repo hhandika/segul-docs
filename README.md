@@ -1,0 +1,2 @@
+# segul-docs
+Segul Documentation
