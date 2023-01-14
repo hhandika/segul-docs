@@ -18,7 +18,7 @@ You can also use wildcard to convert multiple concatenated alignment partitions 
 segul partition --input ./*/concatenated_alignment.nex --input-part charset --output-part nexus
 ```
 
-When merging codon model partition, `segul` can clean up locus names if they are suffixes with subset{codon_pos}, subset\_{codon_pos}, or {codon_pos}\_pos. For example, for this partition format:
+When merging codon model partition, `segul` can clean up locus names if they are suffixes with `subsetCodon_pos`, `subset_codon_pos`, or `codon_pos_pos`. For example, for this partition format:
 
 ```Text
 DNA, locus_1_subset1 = 1-10\3
@@ -48,5 +48,3 @@ DNA, locus_2 = 11-20
 ```
 
 `segul` will save the resulting partition file in the current directory and the output file name will be the input file suffixed it with `_partition`. For example, if the input file is `alignment.nexus`, the output filename will be `alignment_partition.nex` or`alignment_partition.txt` (if the output is in a RaxML format)
-
-Learn more about converting partition formats [here](https://github.com/hhandika/segul/wiki/5.-Usages#converting-partition-formats).

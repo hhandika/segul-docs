@@ -3,12 +3,17 @@
   "description": "An ultrafast and memory efficient alignment tool for phylogenomics",
   "anchors": [
     {
-      "title": "GitHub",
+      "title": "SEGUL Source Code",
       "icon": "github",
       "link": "https://github.com/hhandika/segul"
     },
     {
-      "title": "crates.io",
+        "title": "crates.io",
+        "icon": "cubes",
+        "link": "https://crates.io/crates/segul"
+      }
+    {
+      "title": "Source Code Docs",
       "icon": "code",
       "link": "https://docs.rs/segul/latest/segul/"
     }

@@ -128,6 +128,19 @@ Using `--input` (or `-i` in short version) option:
 segul convert --input [path/wildcard-to-your-files] --output-format [sequence-format-keyword]
 ```
 
+# Splitting concatenated alignments by partitions
+
+To split alignment by partitions, you need the alignment file and the alignment partition. If the input partition file is not provided, `segul` will assume the partition is in the alignment file. It will fail to run if it could not find the partition in the input alignment.
+
+The input option accepts a single file only. The `--dir` option is not available for this subcommand.
+
+```Bash
+segul split --input [a-path-to-a-concatenated-alignment] --input-part [a-path-to-partition-file]
+```
+
+By default, `segul` will use the alignment name as an output directory. To provide the output directory name, use the `--output` or `-o` option.
+For the resulting alignments, `segul` will use the locus name in the partition file as the output filename. You can prefix this filename by using `--prefix` option. The resulting filenames will be `prefix_locus-name.file-extension`.
+
 ## Extracting sequences in alignments
 
 You can also extract sequences from a collection of alignments. It can be done by supplying a list of IDs directly using the command line or in a text file. `segul` will look for the exact match of the IDs and is case sensitive. You can also use regular expression for more flexiple option.
@@ -192,6 +205,57 @@ segul filter --dir [a-path-to-a-directory] --input-format [sequence-format-keywo
 Other available parameters are multiple minimal taxon completeness `--npercent`, alignment length `--len`, numbers of minimal parsimony informative sites `--pinf`, and percent of minimal parsimony informative sites `--percent-inf`.
 
 By default, the app will copy files that are match with the parameter to a new folder. If you would like to concat the results instead, you can specify it by passing `--concat` flags. All the options available for the concat function [above](#concatenating-alignments) also available for concatenating filtered alignments.
+
+# Converting partition formats
+
+`segul` can convert a single and multiple partition files in multiple folders. It can extract partition embedded in NEXUS sequence files or merge codon model partition. For this command, the input option is only available using the `--input` option (or `-i` in short version).
+
+```Bash
+segul partition --input <a-path/wildcard-to-partition> --input-part <input-partition-format> --output-part<output-partition-format>
+```
+
+For example, to extract nexus in-file partitions (called charset format in `segul`):
+
+```Bash
+segul partition --input concatenated_alignment.nex --input-part charset --output-part nexus
+```
+
+You can also use wildcard to convert multiple concatenated alignment partitions at once:
+
+```Bash
+segul partition --input ./*/concatenated_alignment.nex --input-part charset --output-part nexus
+```
+
+When merging codon model partition, `segul` can clean up locus names if they are suffixes with `subsetCodon_pos`, `subset_codon_pos`, or `codon_pos_pos`. For example, for this partition format:
+
+```Text
+DNA, locus_1_subset1 = 1-10\3
+DNA, locus_1_subest2 = 2-10\3
+DNA, locus_1_subset3 = 3-10\3
+DNA, locus_2_subset1 = 11-20\3
+DNA, locus_2_subest2 = 12-20\3
+DNA, locus_2_subset3 = 13-20\3
+```
+
+or
+
+```Text
+DNA, locus_1_1stpos = 1-10\3
+DNA, locus_1_2ndpos = 2-10\3
+DNA, locus_1_3rdpos = 3-10\3
+DNA, locus_2_1stpos = 11-20\3
+DNA, locus_2_2ndpos = 12-20\3
+DNA, locus_2_3rdpos = 13-20\3
+```
+
+Will be merge as:
+
+```Text
+DNA, locus_1 = 1-10
+DNA, locus_2 = 11-20
+```
+
+`segul` will save the resulting partition file in the current directory and the output file name will be the input file suffixed it with `_partition`. For example, if the input file is `alignment.nexus`, the output filename will be `alignment_partition.nex` or`alignment_partition.txt` (if the output is in a RaxML format)
 
 ## Getting sample IDs from a collection of alignments
 
