@@ -1,6 +1,13 @@
 {
   "name": "SEGUL",
   "description": "An ultrafast and memory efficient alignment tool for phylogenomics",
+  "anchors": [
+    {
+      "title": "crates.io",
+      "icon": "house",
+      "link": "https://docs.rs/segul/latest/segul/"
+    }
+  ],
   "sidebar": [
     ["Welcome", "/"],
     [
