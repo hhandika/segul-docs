@@ -20,62 +20,44 @@ To check for available options and flags for each sub-command:
 segul <SUBCOMMAND> --help
 ```
 
-Across the app functions, most generic arguments are also available in short format to save time typing them. For example, below we use short arguments to concat alignments in a directory named `nexus-alignments`:
+## Computing sequence summary statistics
+
+`segul` generate summary statistics for all alignment, each locus, and each taxon. To generate the summary statistics in for alignment files in a directory (usign `--dir` or `-d` option):
 
 ```Bash
-segul concat -d nexus-alignments -f nexus
+segul summary --dir [a-path-to-a-directory] --input-format [sequence-format-keyword]
 ```
 
-## Input Options
-
-The app has two input options. The standard input `--input` or `-i` in short format and `--dir` or `-d` in short format. If your input files are all in a single directory, you should use the `--dir` or `-d` option and specify the file format:
+`segul` can also generate summary statistics for each alignment by passing `--per-locus` flag:
 
 ```Bash
-segul <SUBCOMMAND> -d alignment_dir -f nexus
+segul summary --dir [a-path-to-a-directory] --input-format [sequence-format-keyword] --per-locus
 ```
 
-When dealing with a single file, more complex folder structure, or unusual file extensions, use the `--input` or `-i` option.
+## Concatenating alignments
 
-For a single file:
+To concat all alignments in a directory using `--dir` (or `-d` in short version):
 
 ```Bash
-segul <SUBCOMMAND> -i alignment-dir/alignment_file.fasta
+segul concat --dir [a-path-to-a-directory] --input-format [sequence-format-keyword]
 ```
 
-Multiple file in a directory using wildcard:
+Using `--input` (or `-i` in short version) option:
 
 ```Bash
-segul <SUBCOMMAND> -i alignment-dir/*.fasta
+segul concat --input [path/wildcard-to-your-files]
 ```
 
-Multiple files in multiple directories:
+## Converting sequence formats
+
+Segul can convert a single sequence file or multiple sequence files in a directory. To input the file, use `--dir` or `-d` option:
 
 ```Bash
-segul <SUBCOMMAND> -i alignment-dir1/*.fasta alignment-dir2/*.fasta
+segul convert --dir [path-to-your-repository] --input-format [sequence-format-keyword] --output-format [sequence-format-keyword]
 ```
 
-For unusual file extensions or if the app failed to detect the file format, specify the input format:
+Using `--input` (or `-i` in short version) option:
 
 ```Bash
-segul <SUBCOMMAND> -i alignment-dir/*.aln -f fasta
+segul convert --input [path/wildcard-to-your-files] --output-format [sequence-format-keyword]
 ```
-
-Both of the input options are available in all subcommands.
-
-## Datatype
-
-The app support both DNA and amino acid sequences. It will check whether the sequences contain only valid IUPAC characters of the datatype. By default, it sets to DNA sequences. Use the option `--datatype aa` if your input is amino acid sequences. For example:
-
-```Bash
-segul convert -d /alignments -f nexus --datatype aa
-```
-
-## Output
-
-Most functions will save into their default directory. For example, the concat function will default to create `SEGUL-concat` directory and will save its output files into the directory. To specify the output directory, use the `--output` or `-o` option. For example:
-
-```Bash
-segul convert -d /alignments -f nexus -o alignments_concat
-```
-
-By default, the app avoids over-writing files with similar names. The app will check if a such file or directory exists and will ask if you would like to remove it. The app will exit if you decide to not remove it. You can pass `--overwrite` flag to remove existing output files or directories without asking first.
