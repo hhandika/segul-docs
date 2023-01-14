@@ -14,7 +14,7 @@
       "Quick Start",
       [
         ["Commands", "/quick_commands"],
-        ["Usage", "/quick_usage"],
+        ["Using SEGUL", "/quick_usage"],
         ["Log File", "/quick_log"]
       ]
     ],
