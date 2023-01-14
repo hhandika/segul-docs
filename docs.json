@@ -20,9 +20,12 @@
     [
       "Installation",
       [
-        ["Installation", "/installation"],
-        ["Update", "/update"],
-        ["Uninstall", "/uninstall"]
+        ["Using Pre-Compiled Binary", "/install_binary"],
+        ["Using Package Manager", "/install_cargo"],
+        ["Compiling Source Code", "/install_source"],
+        ["Try Development Version", "/install_dev"],
+        ["Updating SEGUL", "/update"],
+        ["Uninstall SEGUL", "/uninstall"]
       ]
     ],
     ["Command Options", "/command_options"],
