@@ -1,0 +1,15 @@
+# Batch removing sequence based on user-defined IDs
+
+Based on a list of IDs, you can remove sequences in a collection of alignments.
+
+```Bash
+segul remove --dir [alignment-dir] -f [sequence-format-keyword] --id [list-of-id]
+```
+
+Using regular expression:
+
+```Bash
+segul remove --dir [alignment-dir] -f [sequence-format-keyword] --re=["regex"]
+```
+
+If you remove more than a half of the sequence, `segul`'s extract feature is more efficient.

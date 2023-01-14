@@ -1,0 +1,19 @@
+# Getting sample IDs from a collection of alignments
+
+You have multiple alignments and want to know what are samples you have in all of those alignment. You can easily do it using `segul`. The app can find all the unique IDs across thousands of alignments within seconds.
+
+The command using a `--dir` (or `-d` in short version):
+
+```Bash
+segul id --dir [a-path-to-a-directory] --input-format [sequence-format-keyword]
+```
+
+Using `--input` (or `-i` in short version) option ([learn the difference](https://github.com/hhandika/segul/wiki/4.-Command-Options#input-options)):
+
+```Bash
+segul id --input [a-path/wilcard-to-files]
+```
+
+It will generate a text file that contains all the unique IDs across your alignments.
+
+Learn more about getting sample IDs [here](https://github.com/hhandika/segul/wiki/5.-Usages#finding-unique-ids-in-alignments).

@@ -1,0 +1,17 @@
+# Mapping sample distribution in a collection of alignments
+
+If you would like to know how the samples distributed across your alignments, you only need to add the `--map` flag when searching for unique IDs. It will generate both the unique IDs (in a text file) and the sample distribution in boolean format (save to a csv file).
+
+Using a `--dir` (or `-d` in short version):
+
+```Bash
+segul id --dir [a-path-to-a-directory] --input-format [sequence-format-keyword] --map
+```
+
+Using `--input` (or `-i` in short version) option ([learn the difference](https://github.com/hhandika/segul/wiki/4.-Command-Options#input-options)):
+
+```Bash
+segul id --input [a-path/wilcard-to-files] --map
+```
+
+Learn more about mapping sample distribution [here](https://github.com/hhandika/segul/wiki/5.-Usages#mapping-sample-distribution-in-a-collection-of-alignments).
