@@ -10,13 +10,7 @@
   ],
   "sidebar": [
     ["Welcome", "/"],
-    [
-      "Quick Start",
-      [
-        ["Using SEGUL", "/quick_use"],
-        ["Log File", "/quick_log"]
-      ]
-    ],
+    ["Quick Start", "/start"],
     [
       "Installation",
       [
