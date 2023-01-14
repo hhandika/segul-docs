@@ -33,11 +33,11 @@
         ["Uninstall SEGUL", "/uninstall"]
       ]
     ],
-    ["Command Options", "/command_options"],
     [
       "Usage",
       [
         ["Overview", "/usage_overview"],
+        ["Command Options", "/command_options"],
         ["Summary Statistics", "/usage_summary"],
         ["Alignment Concatenation", "/usage_concat"],
         ["Alignment Conversion", "/usage_convert"],
@@ -50,6 +50,24 @@
         ["Sequence Translation", "/usage_translate"],
         ["Sequence ID Finding", "/usage_id"],
         ["Sequence ID Mapping", "/usage_map"]
+      ]
+    ],
+    [
+      "GUI Version",
+      [
+        ["Overview", "/gui_overview"],
+        ["Installation", "/gui_install"],
+        ["Usage", "/gui_usage"]
+      ]
+    ],
+    [
+      "Developer Resources",
+      [
+        ["Rust Package", "/develop_rust"],
+        ["R Package", "/develop_r"],
+        ["Python Package", "/develop_py"],
+        ["Julia Package", "/develop_julia"],
+        ["Other Languages", "/develop_other"]
       ]
     ]
   ]
