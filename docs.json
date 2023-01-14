@@ -38,17 +38,17 @@
       [
         ["Overview", "/usage_overview"],
         ["Summary Statistics", "/usage_summary"],
-        ["Alignment Concatenation", "/quick_concat"],
-        ["Alignment Conversion", "/quick_convert"],
-        ["Alignment Filtering", "/quick_filter"],
-        ["Alignment Splitting", "/quick_split"],
-        ["Partition Conversion", "/quick_part"],
-        ["Sequence Extraction", "/quick_extract"],
-        ["Sequence Removal", "/quick_remove"],
-        ["Sequence Renaming", "/quick_rename"],
-        ["Sequence Translation", "/quick_translate"],
-        ["Sequence ID Finding", "/quick_id"],
-        ["Sequence ID Mapping", "/quick_map"]
+        ["Alignment Concatenation", "/usage_concat"],
+        ["Alignment Conversion", "/usage_convert"],
+        ["Alignment Filtering", "/usage_filter"],
+        ["Alignment Splitting", "/usage_split"],
+        ["Partition Conversion", "/usage_part"],
+        ["Sequence Extraction", "/usage_extract"],
+        ["Sequence Removal", "/usage_remove"],
+        ["Sequence Renaming", "/usage_rename"],
+        ["Sequence Translation", "/usage_translate"],
+        ["Sequence ID Finding", "/usage_id"],
+        ["Sequence ID Mapping", "/usage_map"]
       ]
     ]
   ]
