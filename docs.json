@@ -38,18 +38,18 @@
       [
         ["Overview", "/usage_overview"],
         ["Command Options", "/command_options"],
-        ["Summary Statistics", "/usage_summary"],
         ["Alignment Concatenation", "/usage_concat"],
         ["Alignment Conversion", "/usage_convert"],
         ["Alignment Filtering", "/usage_filter"],
         ["Alignment Splitting", "/usage_split"],
+        ["Alignment Summary", "/usage_summary"],
         ["Partition Conversion", "/usage_part"],
         ["Sequence Extraction", "/usage_extract"],
+        ["Sequence ID Finding", "/usage_id"],
+        ["Sequence ID Mapping", "/usage_map"],
         ["Sequence Removal", "/usage_remove"],
         ["Sequence Renaming", "/usage_rename"],
-        ["Sequence Translation", "/usage_translate"],
-        ["Sequence ID Finding", "/usage_id"],
-        ["Sequence ID Mapping", "/usage_map"]
+        ["Sequence Translation", "/usage_translate"]
       ]
     ],
     [
