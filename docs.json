@@ -38,6 +38,7 @@
       [
         ["Overview", "/usage_overview"],
         ["Command Options", "/command_options"],
+        ["Log File", "/usage_log"],
         ["Alignment Concatenation", "/usage_concat"],
         ["Alignment Conversion", "/usage_convert"],
         ["Alignment Filtering", "/usage_filter"],
@@ -49,8 +50,7 @@
         ["Sequence ID Mapping", "/usage_map"],
         ["Sequence Removal", "/usage_remove"],
         ["Sequence Renaming", "/usage_rename"],
-        ["Sequence Translation", "/usage_translate"],
-        ["Log File", "/usage_log"]
+        ["Sequence Translation", "/usage_translate"]
       ]
     ],
     [
