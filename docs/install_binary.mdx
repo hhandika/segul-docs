@@ -2,8 +2,8 @@
 
 The pre-compiled binary is available in [the release page](https://github.com/hhandika/segul/releases/). The typical workflow is as follow:
 
-1. Download the zip file in [the release page](https://github.com/hhandika/segul/releases/) to your computer, using a browser or using a command line app.
-2. Extract the zip file.
+1. Download the compressed executable file (.zip or .tar.gz) in [the release page](https://github.com/hhandika/segul/releases/) to your computer, either using a browser or using a command line app.
+2. Extract the file.
 3. Make the binary executable (Linux and MacOS only).
 4. Put it in a folder registered in your environment variable. It can be run from the folder where you extract the app too, but this option is less convenient when dealing with datasets in different folders or storage partitions.
 
@@ -30,7 +30,7 @@ wget https://github.com/hhandika/segul/releases/download/v0.18.1/segul-macOS-arm
 tar xfvz segul-macOS-arm64.tar.gz
 ```
 
-- Make it executable. This step may not be necessary.
+- Make it executable. This step may not be necessary. However, if your terminal app does not recognize the binary, you can try this step.
 
 ```Bash
 chmod +x segul
@@ -42,7 +42,7 @@ If you would like the binary executable for all users:
 chmod a+x segul
 ```
 
-The next step is putting the binary in a folder registered in your PATH variable. It is always best to avoid registering too many paths in your environment variable. It will slow down your terminal startup. If you already used a single executable cli app, the chance is that you may already have a folder registered in your path variable. Copy SEGUL executable to the folder. Then, try call SEGUL from anywhere in your system:
+The next step is putting the binary in a folder registered in your PATH variable. Copy SEGUL executable to the folder. Then, try call SEGUL from anywhere in your system:
 
 ```Bash
 segul --version
@@ -50,8 +50,8 @@ segul --version
 
 It should show the SEGUL version number.
 
-> **MacOS Pro Tips**:
-> We recommend using [iTerm2](https://iterm2.com/) for easier navigation in the Terminal.
+> **Pro Tips**:
+> It is best to avoid registering too many paths in your environment variable. It will slow down your terminal startup. If you already used a single executable cli app, the chance is that you may already have a folder registered in your path variable. Copy `segul` executable to the folder instead. For MacOS users, we recommend using [iTerm2](https://iterm2.com/) for easier navigation in the Terminal.
 
 ## Windows
 

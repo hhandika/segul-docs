@@ -25,6 +25,7 @@
     [
       "Installation",
       [
+        ["Overview", "/install_overview"],
         ["Using Pre-Compiled Binary", "/install_binary"],
         ["Using Package Manager", "/install_cargo"],
         ["Compiling Source Code", "/install_source"],
