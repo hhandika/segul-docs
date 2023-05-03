@@ -1,6 +1,8 @@
 {
   "name": "SEGUL",
   "description": "An ultrafast and memory efficient alignment tool for phylogenomics",
+  "logo": "../assets/logo/logo.png",
+  "logoDark": "../assets/logo/logo.png",
   "anchors": [
     {
       "title": "SEGUL Source Code",
