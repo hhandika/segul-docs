@@ -1,6 +1,7 @@
 {
   "name": "SEGUL",
   "description": "An ultrafast and memory efficient alignment tool for phylogenomics",
+  "favicon": "../assets/favicon/favicon.ico",
   "logo": "../assets/logo/logo.png",
   "logoDark": "../assets/logo/logo.png",
   "anchors": [
