@@ -23,6 +23,7 @@
   ],
   "sidebar": [
     ["Welcome", "/"],
+    ["FAQ", "/faq"],
     ["Citation", "/citation"],
     ["Quick Start", "/quick_start"],
     [
@@ -62,7 +63,7 @@
       [
         ["Overview", "/gui_overview"],
         ["Installation", "/gui_install"],
-        ["Usage", "/gui_usage"]
+        ["Alignment concatenation", "/gui_concat"]
       ]
     ],
     [
@@ -71,7 +72,6 @@
         ["Rust Package", "/develop_rust"],
         ["R Package", "/develop_r"],
         ["Python Package", "/develop_py"],
-        ["Julia Package", "/develop_julia"],
         ["Other Languages", "/develop_other"]
       ]
     ]
