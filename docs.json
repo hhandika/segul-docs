@@ -26,7 +26,7 @@
     ["Citation", "/citation"],
     ["Quick Start", "/quick_start"],
     [
-      "Installation",
+      "CLI Installation",
       [
         ["Overview", "/install_overview"],
         ["Using Pre-Compiled Binary", "/install_binary"],
@@ -38,7 +38,7 @@
       ]
     ],
     [
-      "Usage",
+      "CLI Usage",
       [
         ["Overview", "/usage_overview"],
         ["Command Options", "/command_options"],
@@ -58,7 +58,7 @@
       ]
     ],
     [
-      "GUI Version",
+      "GUI Usage",
       [
         ["Overview", "/gui_overview"],
         ["Installation", "/gui_install"],
