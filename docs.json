@@ -49,13 +49,13 @@
         ["Alignment Splitting", "/usage_split"],
         ["Alignment Partition Conversion", "/usage_part"],
         ["Alignment Summary", "/usage_summary"],
-        ["Raw read Summary", "/usage_raw_summary"],
         ["Contig summary", "/usage_contig_summary"],
+        ["Raw read Summary", "/usage_raw_summary"],
+        ["Sample distribution mapping", "/usage_map"],
         ["Sequence Extraction", "/usage_extract"],
         ["Sequence ID Parsing", "/usage_id"],
-        ["Sequence ID Mapping", "/usage_map"],
         ["Sequence Removal", "/usage_remove"],
-        ["Sequence Renaming", "/usage_rename"],
+        ["Sequence ID Renaming", "/usage_rename"],
         ["Sequence Translation", "/usage_translate"],
         ["Log File", "/usage_log"]
       ]
@@ -65,7 +65,20 @@
       [
         ["Overview", "/gui_overview"],
         ["Installation", "/gui_install"],
-        ["Alignment concatenation", "/gui_concat"]
+        ["Alignment Concatenation", "/gui_usage_concat"],
+        ["Alignment Conversion", "/gui_usage_convert"],
+        ["Alignment Filtering", "/gui_usage_filter"],
+        ["Alignment Splitting", "/gui_usage_split"],
+        ["Alignment Partition Conversion", "/gui_usage_part"],
+        ["Alignment Summary", "/gui_usage_summary"],
+        ["Contig summary", "/gui_usage_contig_summary"],
+        ["Raw read Summary", "/gui_usage_raw_summary"],
+        ["Sample distribution mapping", "/gui_usage_map"],
+        ["Sequence Extraction", "/gui_usage_extract"],
+        ["Sequence ID Parsing", "/gui_usage_id"],
+        ["Sequence Removal", "/gui_usage_remove"],
+        ["Sequence ID Renaming", "/gui_usage_rename"],
+        ["Sequence Translation", "/gui_usage_translate"]
       ]
     ],
     [
