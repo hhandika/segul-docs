@@ -27,11 +27,12 @@
     ["Citation", "/citation"],
     ["Quick Start", "/quick_start"],
     [
-      "CLI Installation",
+      "Installation",
       [
         ["Overview", "/install_overview"],
-        ["Using Pre-Compiled Binary", "/install_binary"],
-        ["Using Package Manager", "/install_cargo"],
+        ["GUI Installation", "/gui_install"],
+        ["CLI Pre-Compiled Binary", "/install_binary"],
+        ["CLI Package Manager", "/install_cargo"],
         ["Compiling Source Code", "/install_source"],
         ["Try Development Version", "/install_dev"],
         ["Updating SEGUL", "/update"],
@@ -64,7 +65,6 @@
       "GUI Usage",
       [
         ["Overview", "/gui_overview"],
-        ["Installation", "/gui_install"],
         ["Alignment Concatenation", "/gui_usage_concat"],
         ["Alignment Conversion", "/gui_usage_convert"],
         ["Alignment Filtering", "/gui_usage_filter"],
