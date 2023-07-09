@@ -89,6 +89,7 @@
         ["Python Package", "/develop_py"],
         ["Other Languages", "/develop_other"]
       ]
-    ]
+    ],
+    ["Legal Notice", "/legal_notice"]
   ]
 }
