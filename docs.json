@@ -90,6 +90,8 @@
         ["Other Languages", "/develop_other"]
       ]
     ],
-    ["Legal Notice", "/legal_notice"]
+    ["Terms", "/terms"],
+    ["Privacy", "/privacy"],
+    ["EULA", "/eula"]
   ]
 }
